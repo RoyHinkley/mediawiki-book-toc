@@ -26,7 +26,7 @@ The following four modified source files are included:
 ```text
 includes/skins/components/SkinComponentTableOfContents.php
 skins/Vector/resources/skins.vector.js/tableOfContents.js
-skins/Vector/resources/skins.vector.templates.mustache/TableOfContents.mustache
+skins/Vector/resources/skins.vector.templates.mustache/TableOfContents__list.mustache
 skins/Vector/resources/skins.vector.templates.mustache/TableOfContents__line.mustache
 ```
 
@@ -47,7 +47,7 @@ modified/
         │       └── tableOfContents.js
         └── resources/
             └── skins.vector.templates.mustache/
-                ├── TableOfContents.mustache
+                ├── TableOfContents__list.mustache
                 └── TableOfContents__line.mustache
 ```
 
