@@ -1,0 +1,22 @@
+<ul class="vector-toc-contents" id="mw-panel-toc-list">
+	{{!
+		// JW Book TOC mod
+
+		The standard Vector TOC inserts a synthetic "Beginning"
+		entry for the current page. Book TOC pages already provide
+		an entry for the current chapter, so omit this entry
+		when msg-vector-toc-beginning is empty.
+	}}
+	{{#show-toc-beginning}}
+	<li id="toc-mw-content-text"
+		class="vector-toc-list-item vector-toc-level-1">
+		<a href="#" class="vector-toc-link">
+			<div class="vector-toc-text">{{ msg-vector-toc-beginning }}</div>
+		</a>
+	</li>
+	{{/show-toc-beginning}}
+
+	{{#array-sections}}
+	{{>TableOfContents__line}}
+	{{/array-sections}}
+</ul>
