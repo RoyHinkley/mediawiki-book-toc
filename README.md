@@ -56,15 +56,15 @@ modified/
 
 Installation is accomplished by replacing the four corresponding files of a MediaWiki installation directory with the modified versions from this repository. Because the repository preserves the MediaWiki directory structure beneath the modified directory, a single command can do the copying:
 
-- **Linux**
+### Linux
 ```bash
 cp -a modified/. /path/to/mediawiki/
 ```
-- **Windows (Command Prompt)**
+### Windows (Command Prompt)
 ```cmd
 robocopy modified "\path\to\mediawiki" /E
 ```
-- **Windows (PowerShell)**
+### Windows (PowerShell)
 ```powershell
 Copy-Item .\modified\* "\path\to\mediawiki\" -Recurse -Force
 ```
